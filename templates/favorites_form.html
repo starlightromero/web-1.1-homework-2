@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+
+{% block content %}
+
+<form action="/favorties_result" method="GET">
+  <label for="color">What is your favorite color?</label><br />
+  <input type="text" name="color" /><br />
+  <label for="animal">What is your favorite animal?</label><br />
+  <input type="text" name="animal" /><br />
+  <label for="city">What is your favorite city?</label><br />
+  <input type="text" name="city" /><br />
+  <input type="submit" value="Submit!" />
+</form>
+
+{% endblock %}

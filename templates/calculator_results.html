@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculator Results</title>
-    </head>
-    <body>
-        <!-- Your HTML code goes here! -->
+{% extends "home.html" %}
 
+{% block content %}
 
+{% for num in range(result) %}
+  <p>
+    You chose to {{ operation }} {{ operand_one }} and {{ operand_two }}. Your
+    result is: {{ result }}
+  </p>
+{% endfor %}
 
-
-
-        
-    </body>
-</html>
+{% endblock %}
